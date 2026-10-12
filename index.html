@@ -3,108 +3,224 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu Utama - PPLG</title>
-    <style>
-        /* Mengatur tampilan dasar (tema gelap mirip chat) */
-        body {
-            font-family: Arial, sans-serif;
-            /* Latar belakang gelap, Anda bisa menggantinya dengan gambar pola/doodle jika punya */
-            background-color: #0f1115; 
-            color: #ffffff;
-            margin: 0;
-            padding: 20px;
-            display: flex;
-            justify-content: center;
-        }
 
-        /* Kotak pembungkus utama untuk tampilan HP (Mobile First) */
-        .container {
-            width: 100%;
-            max-width: 400px;
-        }
+    <title>Yogi El Safani | RPL</title>
 
-        /* Gaya untuk pesan header "Pilih menu di bawah:" */
-        .header-chat {
-            background-color: #1e2329;
-            padding: 12px 15px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-size: 16px;
-        }
-
-        .header-chat .time {
-            font-size: 12px;
-            color: #8b939c;
-        }
-
-        /* Daftar menu */
-        .menu-list {
-            display: flex;
-            flex-direction: column;
-            gap: 12px; /* Jarak antar tombol */
-        }
-
-        /* Gaya untuk setiap tombol menu */
-        .menu-item {
-            background-color: #1a1e24; /* Warna abu-abu gelap */
-            color: #ffffff;
-            text-decoration: none;
-            padding: 15px;
-            border-radius: 12px;
-            font-weight: bold;
-            font-size: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 1px solid #2c323a; /* Garis tepi tipis */
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-            transition: background-color 0.2s;
-        }
-
-        /* Efek saat tombol disentuh atau diklik */
-        .menu-item:hover, .menu-item:active {
-            background-color: #2c323a;
-        }
-
-        /* Memberi jarak antara ikon emoji dan teks */
-        .menu-item span {
-            margin-right: 10px;
-            font-size: 18px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <div class="container">
+<div class="container">
+
+    <!-- HEADER -->
+    <header>
+
+        <a href="index.html" class="logo">
+            YELZ<span>.</span>
+        </a>
+
+        <button id="darkMode" class="dark-button">
+            ☾
+        </button>
+
+    </header>
+
+
+    <!-- PROFILE -->
+    <section class="profile">
+
+        <div class="profile-photo">
+            <img src="image.png" alt="Foto Yogi El Safani">
+        </div>
+
+        <p class="jurusan">
+            REKAYASA PERANGKAT LUNAK
+        </p>
+
+        <h1>
+            Yogi El Safani
+        </h1>
+
+        <p class="bio">
+            Saya siswa RPL yang sedang belajar dunia pemrograman,
+            desain website, dan teknologi. Saya ingin terus
+            mengembangkan kemampuan coding dan membuat berbagai
+            project digital.
+        </p>
+
+
+        <!-- SOSMED -->
+        <div class="social-media">
+
+
+            <a href="https://www.tiktok.com/@yelz69" target="_blank">
+                TikTok
+            </a>
+
+            <a href="https://www.instagram.com/yelsh4c" target="_blank">
+                Instagram
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECT -->
+    <section class="projects">
+
+        <div class="title">
+
+            <p>PROJECT & TUGAS</p>
+
+            <h2>
+                Hasil Belajar
+            </h2>
+
+            <span>
+                Beberapa tugas dan project saya.
+            </span>
+
+        </div>
+
+
+        <div class="project-list">
+
+
+            <!-- FORMULIR BIODATA -->
+            <a href="form_biodata.html" class="project">
+
+                <div class="number">
+                    01
+                </div>
+
+                <div class="project-info">
+
+                    <h3>
+                        Formulir Biodata
+                    </h3>
+
+                    <p>
+                        HTML Form
+                    </p>
+
+                </div>
+
+                <div class="arrow">
+                    →
+                </div>
+
+            </a>
+
+
+            <!-- HASIL BIODATA -->
+            <a href="hasil_biodata.html" class="project">
+
+                <div class="number">
+                    02
+                </div>
+
+                <div class="project-info">
+
+                    <h3>
+                        Hasil Biodata
+                    </h3>
+
+                    <p>
+                        Data Output
+                    </p>
+
+                </div>
+
+                <div class="arrow">
+                    →
+                </div>
+
+            </a>
+
+
+            <!-- TABEL BIODATA -->
+            <a href="tabel.html" class="project">
+
+                <div class="number">
+                    03
+                </div>
+
+                <div class="project-info">
+
+                    <h3>
+                        Tabel Biodata
+                    </h3>
+
+                    <p>
+                        HTML Table
+                    </p>
+
+                </div>
+
+                <div class="arrow">
+                    →
+                </div>
+
+            </a>
+
+
+            <!-- GITHUB -->
+            <a
+                href="https://github.com/yogielsafani"
+                target="_blank"
+                class="project"
+            >
+
+                <div class="number">
+                    04
+                </div>
+
+                <div class="project-info">
+
+                    <h3>
+                        GitHub
+                    </h3>
+
+                    <p>
+                        My Profile
+                    </p>
+
+                </div>
+
+                <div class="arrow">
+                    ↗
+                </div>
+
+            </a>
+
+
+            <!-- VERCEL -->
         
-        <!-- Header Mirip Chat Telegram/WA -->
-        <div class="header-chat">
-            <span>Pilih menu di bawah</span>
-            <span class="time">04:41</span>
+
         </div>
 
-        <!-- Daftar Tombol Menu -->
-        <div class="menu-list">
+    </section>
 
-            <h1>TEST HALAMAN INDEX</h1>
-            <!-- Ganti tanda # dengan link file html atau link tujuan Bapak -->
-            <a href="form_biodata.html" class="menu-item"><span>📊</span> Form Biodata</a>
-            <a href="hasil_biodata.html" class="menu-item"><span>📋</span> Hasil Biodata</a>
-            <a href="tabel.html" class="menu-item"><span>🔎</span> Tabel</a>
-            <!--<a href="#" class="menu-item"><span>🚩</span> Cek Kecurigaan Hari Ini</a>
-            <a href="#" class="menu-item"><span>📍</span> Kunci Lokasi PKL</a>
-            <a href="#" class="menu-item"><span>📊</span> Cek Kehadiran Bimbingan PKL</a>
-            <a href="#" class="menu-item"><span>📋</span> Pending Approval PKL</a>
-            <a href="#" class="menu-item"><span>📔</span> Cek Jurnal Bimbingan PKL</a>-->
-            
-            <!-- Contoh jika menu ini mengarah ke file atau web lain -->
-            <a href="http://www.bagusjava.com/" class="menu-item"><span>🌐</span> Ke Web</a>
-        </div>
 
-    </div>
+    <!-- FOOTER -->
+    <footer>
+
+        <span>
+            © 2026 Yogi El Safani
+        </span>
+
+        <span>
+            RPL
+        </span>
+
+    </footer>
+
+</div>
+
+
+<script src="script.js"></script>
 
 </body>
 </html>
